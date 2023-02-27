@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laskin</title>
+        <meta charset="utf-8"
+        <link rel="stylesheet" href="tyylit.css">
+    </head>
+    <body>
+        <div>
+            <h2>Pieni laskin</h2>
+            Laita laskettavat kokonaisluvut.
+            <br>Valitse sen jälkeen mitä niillä lasketaan.
+            <br>Voit valita toisen laskumerkin ja vaihtaa lukuja vapaasti.
+            <br><br>
+            <!--
+                Laskin (käyttäen: hmtl, css, Javascript) jossa käyttäjä antaa 2kpl numeroita
+                ja löytyy laskut plus. miinus, kerto ja jako.
+                Sivussa maininnat: luku 1:, luku 2:, laske, laskutoimitus (tulos)
+                Kohtiin joihin käyttäjä kirjoittaa numerot on lisätty "ohjaavat" tekstit
+                "1. numero" sekä "2. numero" joiden väri vaaleampi.
+                laskut painikkeilla joissa merkinnät +, -, *, /
+                ohjelma html-sivulla, tyyli css-sivulla ja näppäinten funktiot .js-sivulla
+            -->
+            luku 1: 
+            <input type="number" placeholder="1. numero" id="numero1">
+            <br><br>
+            luku 2: 
+            <input type="number" placeholder="2. numero" id="numero2">
+            <br><br>
+            
+            laske: 
+            <button value="plus" onclick="return munTulos()">+</button>
+            <button value="miinus" onclick="return munTulos2()">-</button>
+            <button value="kerto" onclick="return munTulos3()">*</button>
+            <button value="jako" onclick="return munTulos4()">/</button>
+            <br><br>
+            <b>Vastaus: </b>
+            <span id="tulos"></span>
+
+            
+
+        </div>
+        <script src="javascriptit.js"></script>
+    </body>
+</html>
